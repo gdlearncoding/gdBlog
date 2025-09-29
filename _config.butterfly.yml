@@ -69,7 +69,7 @@ code_blocks:
 #   icon: link || the description || color
 #   图标: 链接 || 描述 || 颜色
 social:
-  fab fa-github: https://github.com/gdlearncoding || Github || '#24292e'
+  fab fa-github: https://github.com/gaoguodong03 || Github || '#24292e'
   # fas fa-envelope: 邮箱链接 || 邮箱 || '#4a7dbe'
   fas fa-envelope: mailto:2987371922@qq.com || Email || '#4a7dbe'
 
@@ -132,7 +132,7 @@ footer_img: false
 # 网站背景
 # Can set it to color or image url
 # 可以设置为颜色值或图片URL
-background:
+background: /image/bearbug1.jpg
 
 cover:
   # Disable the cover or not
@@ -199,7 +199,7 @@ post_meta:
 index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem
 # 顶部图片的高度，例如：300px/300em/300rem
-index_top_img_height: 1000px
+index_top_img_height: 300px
 
 # The subtitle on homepage
 # 首页副标题
@@ -898,9 +898,9 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size:
+  global_font_size: 15px
   code_font_size:
-  font_family:
+  font_family: 'Noto Sans SC'
   code_font_family:
 
 # Font settings for the site title and site subtitle
@@ -1144,7 +1144,7 @@ CDN:
   # Note: Dev version can only use 'local' for internal scripts
   # Note: When setting third-party scripts to 'local', you need to install hexo-butterfly-extjs
   internal_provider: local
-  third_party_provider: jsdelivr
+  third_party_provider: unpkg
 
   # Add version number to url, true or false
   version: false
