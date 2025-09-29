@@ -11,10 +11,14 @@
             "id": "9a6ec6a44b0aaeaf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "note/未命名.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "未命名"
             }
           }
         ]
@@ -136,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "note/未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "未命名 的大纲"
             }
           },
           {
@@ -173,8 +178,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d58e46d282e8916",
+  "active": "9a6ec6a44b0aaeaf",
   "lastOpenFiles": [
+    "note/未命名.md",
     "note"
   ]
 }
