@@ -1,0 +1,11 @@
+{
+  "userIgnoreFilters": [
+    "node_modules/",
+    "public/",
+    "scaffolds/",
+    "themes/",
+    "/public/"
+  ],
+  "newFileLocation": "folder",
+  "newFileFolderPath": "note"
+}
