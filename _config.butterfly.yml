@@ -94,7 +94,7 @@ default_top_img:
 
 # The banner image of index page
 # 首页的横幅图片
-index_img: /image/bearbug1.jpg
+index_img: /image/lovemakeeverything.jpg
 
 # The banner image of archive page
 # 归档页面的横幅图片
@@ -132,7 +132,7 @@ footer_img: false
 # 网站背景
 # Can set it to color or image url
 # 可以设置为颜色值或图片URL
-background: /image/bearbug1.jpg
+background: /image/bg1.jpg
 
 cover:
   # Disable the cover or not
@@ -340,8 +340,8 @@ footer:
     since: 2025
   # Copyright of theme and framework
   copyright:
-    enable: true
-    version: true
+    enable: false
+    version: false
   custom_text:
 
 # --------------------------------------
