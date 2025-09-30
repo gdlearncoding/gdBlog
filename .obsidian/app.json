@@ -9,5 +9,7 @@
   ],
   "newFileLocation": "folder",
   "newFileFolderPath": "note",
-  "promptDelete": false
+  "promptDelete": false,
+  "attachmentFolderPath": "source/_posts/ObsidianPicture",
+  "newLinkFormat": "relative"
 }

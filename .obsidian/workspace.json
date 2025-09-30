@@ -11,13 +11,32 @@
             "id": "9a6ec6a44b0aaeaf",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "note/接入Gemini大模型.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "接入Gemini大模型"
+            }
+          },
+          {
+            "id": "943a0b282ae89d66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/元芳接入MCP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "元芳接入MCP"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,36 +194,45 @@
       "publish:发布更改": false
     }
   },
-  "active": "9a6ec6a44b0aaeaf",
+  "active": "943a0b282ae89d66",
   "lastOpenFiles": [
-    "note/使用Apifox.md",
-    "note/虎符.md",
-    "note/正则表达式.md",
-    "note/Nginx.md",
-    "note/接入Gemini大模型.md",
-    "source/_posts/MVC.md",
-    "note/提速工具.md",
-    "未命名",
-    "source/_posts/元芳.md",
     "db.json",
+    "public/img/touxiang.jpg",
+    "public/img/bg1.jpg",
     "public/img/butterfly-icon.png",
-    "public/archives/2025/index.html",
+    "public/img/bearbug1.jpg",
+    "public/img/logo.jpg",
+    "public/img/background.jpg",
+    "public/img/lovemakeeverything.jpg",
+    "public/old_posts/计算机网络第4章3.html",
+    "public/old_posts/计算机网络第5章3.html",
+    "public/img/error-page.png",
+    "public/img/friend_404.gif",
     "public/img/favicon.ico",
     "public/old_posts/README.txt",
-    "public/img/friend_404.gif",
-    "public/img/error-page.png",
-    "public/archives/2025/09/index.html",
-    "public/img/404.jpg",
-    "public/old_posts/计算机网络第3章1.html",
+    "public/old_posts/计算机网络第3章4.html",
+    "public/old_posts/计算机网络第4章2.html",
+    "public/old_posts/C++函数重载.html",
+    "public/old_posts/计算机网络第1章.html",
     "public/index.html",
-    "public/old_posts/康震文化讲座.html",
-    "public/old_posts/计算机网络第4章3.html",
-    "public/image/touxiang.jpg",
-    "public/image/lovemakeeverything.jpg",
-    "public/image/logo.jpg",
-    "public/image/birthday.jpg",
-    "public/image/bg1.jpg",
-    "public/image/bearbug1.jpg",
+    "public/old_posts/CPP文件输入输出.html",
+    "public/img/404.jpg",
+    "source/_posts/元芳接入MCP.md",
+    "source/_posts/JSON.md",
+    "source/_posts/Docker.md",
+    "source/_posts/正则表达式.md",
+    "source/_posts/接入Gemini大模型.md",
+    "note/虎符.md",
+    "note/提速工具.md",
+    "note/git.md",
+    "source/_posts/元芳.md",
+    "source/_posts/MCP.md",
+    "source/_posts/MVC.md",
+    "note/使用Apifox.md",
+    "note/Nginx.md",
+    "note/SQL.md",
+    "note/XML.md",
+    "source/_posts/mynew.md",
     "node_modules/luxon/LICENSE.md",
     "node_modules/luxon/README.md",
     "node_modules/hexo-deployer-git/README.md",
@@ -213,15 +241,6 @@
     "node_modules/hexo-deployer-git/node_modules/entities/readme.md",
     "node_modules/hexo-deployer-git/node_modules/domutils/readme.md",
     "node_modules/hexo-deployer-git/node_modules/dom-serializer/README.md",
-    "node_modules/hexo-deployer-git/node_modules/dom-serializer/node_modules/entities/readme.md",
-    "node_modules/hexo-deployer-git/node_modules/hexo-util/node_modules/htmlparser2/README.md",
-    "node_modules/hexo-deployer-git/node_modules/domhandler/readme.md",
-    "node_modules/hexo-deployer-git/node_modules/hexo-fs/README.md",
-    "note/Template/Front-matter.md",
-    "note/XML.md",
-    "note/SQL.md",
-    "note/MCP.md",
-    "note/JSON.md",
-    "note/git.md"
+    "node_modules/hexo-deployer-git/node_modules/dom-serializer/node_modules/entities/readme.md"
   ]
 }
