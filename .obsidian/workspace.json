@@ -155,27 +155,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note/未命名.md",
+                "file": "source/_posts/元芳接入MCP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
-            }
-          },
-          {
-            "id": "64b32467c9873efe",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "元芳接入MCP 的大纲"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -197,26 +187,27 @@
   "active": "943a0b282ae89d66",
   "lastOpenFiles": [
     "db.json",
-    "public/img/touxiang.jpg",
     "public/img/bg1.jpg",
+    "public/img/touxiang.jpg",
     "public/img/butterfly-icon.png",
-    "public/img/bearbug1.jpg",
-    "public/img/logo.jpg",
+    "public/pluginsSrc/katex/dist/katex.min.css",
     "public/img/background.jpg",
+    "public/img/logo.jpg",
+    "public/archives/2025/index.html",
+    "public/img/bearbug1.jpg",
+    "public/js/utils.js",
+    "public/js/tw_cn.js",
+    "public/js/main.js",
+    "public/pluginsSrc/mathjax/tex-mml-chtml.js",
+    "public/pluginsSrc/twikoo/dist/twikoo.all.min.js",
     "public/img/lovemakeeverything.jpg",
-    "public/old_posts/计算机网络第4章3.html",
-    "public/old_posts/计算机网络第5章3.html",
+    "public/pluginsSrc/node-snackbar/dist/snackbar.min.css",
+    "public/pluginsSrc/pace-js/pace.min.js",
     "public/img/error-page.png",
+    "public/pluginsSrc/prismjs/prism.js",
     "public/img/friend_404.gif",
-    "public/img/favicon.ico",
-    "public/old_posts/README.txt",
-    "public/old_posts/计算机网络第3章4.html",
-    "public/old_posts/计算机网络第4章2.html",
-    "public/old_posts/C++函数重载.html",
-    "public/old_posts/计算机网络第1章.html",
-    "public/index.html",
-    "public/old_posts/CPP文件输入输出.html",
     "public/img/404.jpg",
+    "conflict-files-obsidian-git.md",
     "source/_posts/元芳接入MCP.md",
     "source/_posts/JSON.md",
     "source/_posts/Docker.md",
@@ -240,7 +231,6 @@
     "node_modules/hexo-deployer-git/node_modules/hexo-util/README.md",
     "node_modules/hexo-deployer-git/node_modules/entities/readme.md",
     "node_modules/hexo-deployer-git/node_modules/domutils/readme.md",
-    "node_modules/hexo-deployer-git/node_modules/dom-serializer/README.md",
-    "node_modules/hexo-deployer-git/node_modules/dom-serializer/node_modules/entities/readme.md"
+    "node_modules/hexo-deployer-git/node_modules/dom-serializer/README.md"
   ]
 }

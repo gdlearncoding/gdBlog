@@ -26,12 +26,13 @@ nav:
 
 # Menu 目錄
 menu:
+  搜索: /search/ || fas fa-search
   首页: / || fas fa-home
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   友链: /link/ || fas fa-link
-  关于: /about/ || fas fa-heart
+  # 关于: /about/ || fas fa-heart
 #格式如下：
 # [标题]: [路径] || [图标]
 # 菜单配置格式说明：
@@ -71,7 +72,7 @@ code_blocks:
 social:
   fab fa-github: https://github.com/gaoguodong03 || Github || '#24292e'
   # fas fa-envelope: 邮箱链接 || 邮箱 || '#4a7dbe'
-  fas fa-envelope: mailto:2987371922@qq.com || Email || '#4a7dbe'
+  # fas fa-envelope: mailto:2987371922@qq.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
@@ -143,7 +144,7 @@ cover:
   # When cover is not set, the default cover is displayed
   # 当没有设置封面时，显示默认封面
   default_cover: 
-    # - xxx.jpg
+    - /img/logo.jpg
 
 # Replace Broken Images
 # 替换损坏的图片
@@ -204,7 +205,7 @@ index_top_img_height:
 # The subtitle on homepage
 # 首页副标题
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   # 打字机效果
   effect: true
@@ -223,7 +224,9 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   # 如果关闭打字机效果，副标题将只显示sub的第一行
-sub:
+  sub:
+   - 碎碎念念 岁岁年年
+
 
 # Article layout on the homepage
 # 首页文章布局
@@ -884,11 +887,11 @@ display_mode: light
 
 # Configuration for beautifying the content of the article
 beautify:
-  enable: false
+  enable: true
   # Specify the field to beautify (site or post)
-  field: post
+  field: site
   # Specify the icon to be used as a prefix for the title, such as '\f0c1'
-  title_prefix_icon:
+  title_prefix_icon: '\f863'
   # Specify the color of the title prefix icon, such as '#F47466'
   title_prefix_icon_color:
 
@@ -1130,9 +1133,14 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/css/modify.css">
+    - "<style>#article-container.post-content h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 1s linear infinite; -moz-animation: avatar_turn_around 1s linear infinite; -o-animation: avatar_turn_around 1s linear infinite; -ms-animation: avatar_turn_around 1s linear infinite; animation: avatar_turn_around 1s linear infinite; }</style>"
+
   bottom:
     # - <script src="xxxx"></script>
-
+    # 标题会动态切换
+    - <script src="/config/js/happy-title.js" async></script> # 自己引入
+    #  首页页脚心动鱼鱼
+    - <script src="/config/js/foot.js" async></script> # 自己引入
 # CDN Settings
 # Don't modify the following settings unless you know how they work
 CDN:
