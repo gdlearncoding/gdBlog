@@ -4,8 +4,10 @@
     "public/",
     "scaffolds/",
     "themes/",
-    "/public/"
+    "/public/",
+    "source/old_posts/"
   ],
   "newFileLocation": "folder",
-  "newFileFolderPath": "note"
+  "newFileFolderPath": "note",
+  "promptDelete": false
 }
