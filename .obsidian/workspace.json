@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/接入Gemini大模型.md",
+                "file": "source/_posts/MVC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "接入Gemini大模型"
+              "title": "MVC"
             }
           }
         ],
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/接入Gemini大模型.md",
+                "file": "source/_posts/MVC.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "接入Gemini大模型 的大纲"
+              "title": "MVC 的大纲"
             }
           }
         ],
@@ -200,17 +200,30 @@
   },
   "active": "6cb4caf9eddf4e93",
   "lastOpenFiles": [
+    "source/_posts/正则表达式.md",
+    "source/_posts/Docker.md",
+    "source/_posts/JSON.md",
+    "source/_posts/MCP.md",
+    "source/_posts/MVC.md",
+    "note/git.md",
+    "note/Nginx.md",
+    "source/_posts/外链播放器.md",
+    "note/元芳.md",
+    "source/_posts/元芳接入MCP.md",
+    "source/_posts/元芳接入Gemini.md",
+    "note/虎符.md",
+    "note/使用Apifox.md",
+    "note/提速工具.md",
     "db.json",
+    "public/pluginsSrc/katex/dist/katex.min.css",
+    "public/pluginsSrc/disqusjs/dist/browser/disqusjs.es2015.umd.min.js",
     "public/pluginsSrc/prismjs/prism.js",
     "public/pluginsSrc/pace-js/pace.min.js",
-    "public/2025/10/01/RAG/index.html",
-    "public/2025/10/01/RAG",
-    "public/2025/10/01",
-    "public/2025/10",
-    "public/pluginsSrc/butterfly-extsrc/sharejs/dist/fonts/iconfont.woff2",
-    "public/pluginsSrc/butterfly-extsrc/sharejs/dist/fonts/iconfont.woff",
-    "public/pluginsSrc/butterfly-extsrc/sharejs/dist/fonts/iconfont.ttf",
-    "public/pluginsSrc/butterfly-extsrc/sharejs/dist/fonts",
+    "public/pluginsSrc/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2",
+    "public/pluginsSrc/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2",
+    "public/pluginsSrc/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2",
+    "public/pluginsSrc/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2",
+    "public/pluginsSrc/@fortawesome/fontawesome-free/webfonts",
     "public/img/ymPic3.jpg",
     "public/img/ymPic2.jpg",
     "public/img/ymPic1.jpg",
@@ -221,16 +234,10 @@
     "public/img/friend_404.gif",
     "public/img/error-page.png",
     "public/img/butterfly-icon.png",
+    "source/_posts/RAG.md",
     "butterfly_theme_fix_guide.md",
     "auto_git_push_config.md",
     "node_modules/hexo-generator-search/README.md",
-    "source/_posts/元芳.md",
-    "source/_posts/外链播放器.md",
-    "source/_posts/元芳接入MCP.md",
-    "source/_posts/RAG.md",
-    "source/_posts/MVC.md",
-    "source/_posts/Docker.md",
-    "source/_posts/接入Gemini大模型.md",
     "source/old_posts/VHDL.md",
     "source/old_posts/Hello Blog.md",
     "source/old_posts/血泪经验.md",
@@ -238,13 +245,6 @@
     "source/old_posts/数据结构平衡二叉树.md",
     "source/old_posts/日志.md",
     "source/old_posts/孔乙己.md",
-    "source/old_posts/康震文化讲座.md",
-    "source/old_posts/计算机网络第1章.md",
-    "source/old_posts/导航.md",
-    "source/old_posts/把自己还给自己.md",
-    "note/提速工具.md",
-    "note/虎符.md",
-    "conflict-files-obsidian-git.md",
-    "source/_posts/JSON.md"
+    "source/old_posts/康震文化讲座.md"
   ]
 }

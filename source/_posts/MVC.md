@@ -1,5 +1,5 @@
 ---
-title: MVC
+title: MVC（Model-View-Controller，模型 - 视图 - 控制器）
 date: 2025-09-30
 tags:
 categories: 果冻的航海日志
