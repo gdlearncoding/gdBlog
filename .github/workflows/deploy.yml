@@ -33,8 +33,15 @@ jobs:
         
     - name: Build
       run: |
+        echo "=== Environment Info ==="
+        node --version
+        npm --version
+        echo "=== Checking dependencies ==="
+        npm ls hexo
+        npm ls hexo-theme-butterfly
+        echo "=== Building site ==="
         hexo clean
-        hexo generate
+        hexo generate --debug
         
     - name: Deploy
       if: github.ref == 'refs/heads/master'

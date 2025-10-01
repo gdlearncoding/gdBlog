@@ -87,6 +87,30 @@ A: 检查`_config.butterfly.yml`配置文件是否正确，主题插件是否安
 ### Q3: GitHub Actions构建成功但页面空白？
 A: 检查部署分支是否正确，GitHub Pages设置是否指向正确的分支。
 
+### Q4: 构建过程显示"exit code 2"错误？
+A: 这是GitHub Actions环境中的构建错误，可能原因：
+- Node.js版本不兼容（建议指定Node.js 18.x）
+- 依赖包版本冲突
+- 主题配置文件格式错误
+- 缺少必要的Hexo插件
+
+**解决方法**：
+1. 检查工作流中的Node.js版本设置
+2. 确保所有依赖包在package.json中正确声明
+3. 检查主题配置文件YAML格式
+4. 添加详细的错误日志输出步骤
+
+### Q5: 本地构建正常但GitHub Actions失败？
+A: 环境差异导致的问题：
+- 本地使用了全局安装的Hexo或主题
+- GitHub Actions环境中缺少某些依赖
+- 文件路径或权限问题
+
+**解决方法**：
+1. 确保所有依赖都在package.json中声明
+2. 使用`npm ls`检查本地依赖树
+3. 在GitHub Actions中添加调试步骤输出环境信息
+
 ## 推荐配置
 
 使用方案一的工作流文件，它已经包含了：
