@@ -1,10 +1,11 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (Alternative)
 
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,9 +14,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-      with:
-        submodules: true
-        
+      
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
@@ -27,29 +26,22 @@ jobs:
         npm install
         npm install hexo-cli -g
         
-    - name: Install hexo-theme-butterfly
+    - name: Setup theme configuration
       run: |
-        # 清理现有主题目录，避免冲突
-        rm -rf themes/butterfly
-        # 使用npm安装主题包
-        npm install hexo-theme-butterfly
-        # 复制主题到themes目录（而不是链接）
-        mkdir -p themes
-        cp -r node_modules/hexo-theme-butterfly themes/butterfly
-        # 确保主题配置文件存在
-        ls -la themes/butterfly/
+        # 备份原始配置
+        cp _config.yml _config.yml.backup
+        # 修改主题配置为npm包名
+        sed -i 's/theme: butterfly/theme: hexo-theme-butterfly/' _config.yml
+        echo "=== Updated config ==="
+        grep "theme:" _config.yml
         
     - name: Build
       run: |
         echo "=== Environment Info ==="
         node --version
         npm --version
-        echo "=== Checking dependencies ==="
-        npm ls hexo
+        echo "=== Theme check ==="
         npm ls hexo-theme-butterfly
-        echo "=== Theme directory check ==="
-        ls -la themes/
-        ls -la themes/butterfly/ || echo "Theme directory not found"
         echo "=== Building site ==="
         hexo clean
         hexo generate --debug

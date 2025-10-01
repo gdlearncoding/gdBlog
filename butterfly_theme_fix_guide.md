@@ -60,8 +60,19 @@ git submodule add https://github.com/jerryc127/hexo-theme-butterfly.git themes/b
 ### 方案三：GitHub Actions专用配置
 针对GitHub Actions环境的特殊处理：
 
-#### 方法1：完全使用npm包主题
-修改`_config.yml`文件：
+#### 方法1：使用sed修改主题配置（推荐）
+创建备用工作流文件`.github/workflows/deploy-alternative.yml`，自动修改主题配置：
+```yaml
+- name: Setup theme configuration
+  run: |
+    # 备份原始配置
+    cp _config.yml _config.yml.backup
+    # 修改主题配置为npm包名
+    sed -i 's/theme: butterfly/theme: hexo-theme-butterfly/' _config.yml
+```
+
+#### 方法2：完全使用npm包主题
+手动修改`_config.yml`文件：
 ```yaml
 # 将主题配置改为
 # theme: butterfly
@@ -69,7 +80,7 @@ git submodule add https://github.com/jerryc127/hexo-theme-butterfly.git themes/b
 theme: hexo-theme-butterfly
 ```
 
-#### 方法2：环境变量控制主题路径
+#### 方法3：环境变量控制主题路径
 在工作流中添加环境变量：
 ```yaml
 - name: Build with theme path
@@ -80,14 +91,12 @@ theme: hexo-theme-butterfly
     hexo generate
 ```
 
-#### 方法3：使用Hexo插件方式安装
-```bash
-# 安装Hexo主题插件
-npm install hexo-renderer-stylus hexo-renderer-ejs
-npm install hexo-theme-butterfly
-
-# 在_config.yml中配置
-theme: butterfly
+#### 方法4：复制主题文件到themes目录
+```yaml
+- name: Install theme
+  run: |
+    npm install hexo-theme-butterfly
+    cp -r node_modules/hexo-theme-butterfly themes/butterfly
 ```
 
 ## 验证步骤
