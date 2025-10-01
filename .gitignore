@@ -8,3 +8,10 @@ public/
 _multiconfig.yml
 .obsidian/cache/
 .obsidian/workspace.json
+
+# Hexo generated files (ensure these are not uploaded)
+public/
+.deploy_git/
+.deploy*/
+*.log
+db.json
