@@ -17,8 +17,15 @@ Error: The butterfly theme could not be found.
 已创建`.github/workflows/deploy.yml`文件，包含以下关键步骤：
 1. 检出代码（包含子模块）
 2. 安装Node.js和npm依赖
-3. 显式安装hexo-theme-butterfly
-4. 构建和部署
+3. 清理现有主题目录避免冲突
+4. 使用npm安装hexo-theme-butterfly包
+5. 创建主题目录链接
+6. 构建和部署
+
+**关键修复点**：
+- 清理`themes/butterfly`目录避免本地主题与npm包冲突
+- 使用符号链接将npm包主题链接到themes目录
+- 确保Hexo能够正确识别主题
 
 ### 方案二：修改主题配置方式
 
@@ -50,14 +57,37 @@ rm -rf themes/butterfly
 git submodule add https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
 ```
 
-### 方案三：手动安装主题依赖
-在GitHub Actions工作流中添加主题安装步骤：
+### 方案三：GitHub Actions专用配置
+针对GitHub Actions环境的特殊处理：
 
+#### 方法1：完全使用npm包主题
+修改`_config.yml`文件：
 ```yaml
-- name: Install Butterfly theme
+# 将主题配置改为
+# theme: butterfly
+# 改为使用npm包名
+theme: hexo-theme-butterfly
+```
+
+#### 方法2：环境变量控制主题路径
+在工作流中添加环境变量：
+```yaml
+- name: Build with theme path
+  env:
+    HEXO_THEME_PATH: node_modules/hexo-theme-butterfly
   run: |
-    git clone https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
-    npm install hexo-theme-butterfly
+    hexo clean
+    hexo generate
+```
+
+#### 方法3：使用Hexo插件方式安装
+```bash
+# 安装Hexo主题插件
+npm install hexo-renderer-stylus hexo-renderer-ejs
+npm install hexo-theme-butterfly
+
+# 在_config.yml中配置
+theme: butterfly
 ```
 
 ## 验证步骤

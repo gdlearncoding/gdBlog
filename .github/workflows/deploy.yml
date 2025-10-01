@@ -29,7 +29,13 @@ jobs:
         
     - name: Install hexo-theme-butterfly
       run: |
+        # 清理现有主题目录，避免冲突
+        rm -rf themes/butterfly
+        # 使用npm安装主题包
         npm install hexo-theme-butterfly
+        # 创建主题目录链接
+        mkdir -p themes
+        ln -sf ../node_modules/hexo-theme-butterfly themes/butterfly || true
         
     - name: Build
       run: |
