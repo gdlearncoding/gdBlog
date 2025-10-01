@@ -3,34 +3,39 @@
   link_list:
     - name: 北邮人论坛
       link: https://bbs.byr.cn/
-      avatar: 网站头像 1
+      avatar: ./img/ymPic2.jpg
     - name: 北邮人PT
       link: https://byr.pt/index.php
-      avatar: 网站头像 2
+      avatar: ./img/ymPic2.jpg  
     - name: 北邮信息门户
       link: https://my.bupt.edu.cn/
-      avatar: 网站头像 2
+      avatar: ./img/ymPic2.jpg
+
+
 
 - class_name: 常用网站
   link_list:
     - name: B站
       link: https://www.bilibili.com/
-      avatar: 网站头像 1
+      avatar: 
     - name: Github
       link: https://github.com/
-      avatar: 网站头像 2
+      avatar: 
 
 - class_name: 自邮之翼
   link_list:
+    - name: 自邮之翼主页
+      link: http://www.free4inno.com/
+      avatar: ./img/logoZiyouzhiyi.jpg
     - name: 虎符
       link: https://hf.free4inno.com/#/login?redirect=%2Fdashboard
-      avatar: 网站头像 1
+      avatar: ./img/logoZiyouzhiyi.jpg
     - name: 元芳studio
       link: https://yf.free4inno.com/#/login?redirect=%2Fapp_management%2Findex
-      avatar: 网站头像 2
+      avatar: ./img/logoZiyouzhiyi.jpg
     - name: 元芳chat
       link: https://chat.free4inno.com/#/login?redirect=%2Fdashboard
-      avatar: 网站头像 2
+      avatar: ./img/logoZiyouzhiyi.jpg
     - name: 知了
       link: https://zhi.free4inno.com/
-      avatar: 网站头像 2
+      avatar: ./img/logoZiyouzhiyi.jpg  

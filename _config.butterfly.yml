@@ -139,12 +139,12 @@ cover:
   # Disable the cover or not
   # 是否禁用封面
   index_enable: true
-  aside_enable: true
-  archives_enable: true
+  aside_enable: false
+  archives_enable: false
   # When cover is not set, the default cover is displayed
   # 当没有设置封面时，显示默认封面
   default_cover: 
-    - /img/logo.jpg
+    - /img/ymPic1.jpg
 
 # Replace Broken Images
 # 替换损坏的图片
@@ -898,9 +898,9 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size: 15px
+  global_font_size:
   code_font_size:
-  font_family: 'Noto Sans SC'
+  font_family: 
   code_font_family:
 
 # Font settings for the site title and site subtitle

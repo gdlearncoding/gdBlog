@@ -11,5 +11,6 @@
   "newFileFolderPath": "note",
   "promptDelete": false,
   "attachmentFolderPath": "source/_posts/ObsidianPicture",
-  "newLinkFormat": "relative"
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true
 }
