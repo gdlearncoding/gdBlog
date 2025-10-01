@@ -82,4 +82,5 @@ if [ -f "${LOG_FILE}" ]; then
     # 只保留最近300行日志
     tail -n 300 "${LOG_FILE}" > "${LOG_FILE}.tmp"
     mv "${LOG_FILE}.tmp" "${LOG_FILE}"
-fiexit 0
+fi
+exit 0
