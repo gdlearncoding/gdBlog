@@ -12,8 +12,4 @@ gemini是google的 所以需要注册google对应的账号,由于需要翻墙再
 
 未完待续...
 
-yfGD. https://jeniya.top/register?aff=tUUD
-yuanfang. https://jeniya.top/register?aff=nIKo
-
-sk-XHi4I77JaiORy2UWpcz6mjYmFQAMmaopNKfucAO0SsjCsBoA
-sk-nWGEUBdfuSeNJzrzuqUV0GLejlQDfiFFWD2vr9IKE5kO80BT
+<!-- yfGD. https://jeniya.top/register?aff=tUUD -->

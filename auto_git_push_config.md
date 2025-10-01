@@ -1,3 +1,4 @@
+/bin/bash /Users/ggd/Blog/gdBlog/auto_git_push.sh
 # 自动Git推送脚本配置指南
 
 本文档将帮助你配置`auto_git_push.sh`脚本，使其每天自动运行。
@@ -98,3 +99,23 @@ git config --global credential.helper osxkeychain
    ```
 
 如果你遇到任何问题，可以查看日志文件了解详细信息。
+
+## 停止自动运行任务
+如果您不想继续使用自动Git推送功能，可以通过以下方式停止定时任务：
+
+1. 编辑crontab文件：
+   ```bash
+   crontab -e
+   ```
+   
+2. 在打开的编辑器中，找到并删除这一行：
+   ```
+   30 23 * * * /bin/bash /Users/ggd/Blog/gdBlog/auto_git_push.sh
+   ```
+   
+3. 保存并退出编辑器（在vim编辑器中按`ESC`键，然后输入`:wq`并按回车键）。
+
+或者，您也可以使用以下命令直接清空所有cron任务（**注意：这会删除所有定时任务，不仅限于Git推送任务**）：
+```bash
+crontab -r
+```
