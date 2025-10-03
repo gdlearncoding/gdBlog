@@ -284,11 +284,17 @@
       time
         display: none
 
+// ==============================================
+// butterfly主题导航栏样式表
+// 功能：定义网站顶部导航栏的样式，包括菜单项、下拉菜单、搜索按钮等交互元素
+// ==============================================
+// 导航栏基础样式
 #nav
   position: absolute
   top: 0
   z-index: 90
   display: flex
+  justify-content: center  // 新增：让导航内容居中
   align-items: center
   padding: 0 36px
   width: 100%
@@ -296,6 +302,8 @@
   font-size: 1.3em
   opacity: 0
   transition: all .5s
+  font-family: 'Comic Sans MS', '幼圆', 'Yuanti SC', cursive, sans-serif
+  letter-spacing: 0.5px // 可选：微调字间距
 
   +maxWidth768()
     padding: 0 16px
@@ -304,9 +312,15 @@
     opacity: 1
 
   #blog-info
-    flex: 1
+    position: absolute  // 修改：将博客信息定位到左侧
+    left: 36px          // 左侧间距
+    flex: 0             // 取消 flex 拉伸
+    font-size: 1.5em
     color: var(--light-grey)
     @extend .limit-one-line
+
+    +maxWidth768()
+      left: 16px
 
     .site-icon
       margin-right: 6px
@@ -336,7 +350,9 @@
     font-weight: bold
 
   .menus_items
-    display: inline
+    display: inline-block  // 改为 inline-block 方便居中
+    margin: 0 auto         // 水平居中
+    text-align: center     // 子元素居中
 
     .menus_item
       position: relative
@@ -411,7 +427,16 @@
 
   #search-button
     display: inline
-    padding: 0 0 0 14px
+    position: absolute
+    right: 36px
+    padding: 0
+    color: var(--light-grey)
+
+    +maxWidth768()
+      right: 16px
+
+    &:hover
+      color: var(--white)
 
   .site-page
     position: relative
@@ -436,28 +461,3 @@
       &:hover
         &:after
           width: 100%
-
-  .nav-page-title
-    position: relative
-    overflow: hidden
-
-    & > :first-child,
-    & > :last-child
-      display: inline-block
-      transition: all .3s ease-in-out
-
-    & > :last-child
-      position: absolute
-      top: 50%
-      left: 0
-      opacity: 0
-      transform: translateY(-50%) translateY(-10px)
-
-    &:hover
-      & > :last-child
-        opacity: 1
-        transform: translateY(-50%) translateY(0)
-
-      & > :first-child
-        opacity: 0
-        transform: translateY(10px)

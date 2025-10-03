@@ -42,7 +42,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -116,68 +116,39 @@ wowjs:
   animateitem:
     - class: recent-post-item #必填项，需要添加动画的元素的class
       style: animate__zoomIn #必填项，需要添加的动画
-      duration: 1500ms #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+      duration: 300ms #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
       delay: 0ms #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
       offset: 0 #选填项，开始动画的距离（相对浏览器底部）
       iteration: 1 #选填项，动画重复的次数
     - class: card-widget
       style: animate__zoomIn
-      duration: 1500ms #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
-      delay: 0ms #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
-      offset: 0 #选填项，开始动画的距离（相对浏览器底部）
-      iteration: 1 #选填项，动画重复的次数
-    - class: container
-      style: animate__zoomIn
-      duration: 1500ms #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
-      delay: 0ms #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
-      offset: 0 #选填项，开始动画的距离（相对浏览器底部）
-      iteration: 1 #选填项，动画重复的次数
+    #   duration: 1500ms #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+    #   delay: 0ms #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+    #   offset: 0 #选填项，开始动画的距离（相对浏览器底部）
+    #   iteration: 1 #选填项，动画重复的次数
+    # - class: container
+    #   style: animate__zoomIn
+    #   duration: 1500ms #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+    #   delay: 0ms #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+    #   offset: 0 #选填项，开始动画的距离（相对浏览器底部）
+    #   iteration: 1 #选填项，动画重复的次数
   animate_css: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css
   wow_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js
   wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
 
-# # hexo-butterfly-swiper 首页的轮播
-# # see https://akilar.top/posts/8e1264d1/
-# swiper:
-#   enable: true # 开关
-#   priority: 2 #过滤器优先权
-#   enable_page: all # 应用页面
-#   timemode: date #date/updated
-#   layout: # 挂载容器类型
-#     type: class
-#     name: recent-posts
-#     index: 0
-#   default_descr: 再怎么看我也不知道怎么描述它的啦！快点进来瞧瞧！
-#   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
-#   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
-#   custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
-#   custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
 
-# hexo-butterfly-categories-card
-# see https://akilar.top/posts/a9131002/
-categoryBar:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
-  enable_page: / # 应用页面
-  layout: # 挂载容器类型
-    type: id
-    name: recent-posts
-    index: 1
-  column: odd # odd：3列 | even：4列
-  row: 2 #显示行数，默认两行，超过行数切换为滚动显示
-  message:
-    - descr: 果冻的航海日记
-      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp
-    # - descr: 项目分享
-    #   cover: https://npm.elemecdn.com/akilar-candyassets/image/cover2.webp
-    # - descr: 博客魔改
-    #   cover: https://npm.elemecdn.com/akilar-candyassets/image/cover3.webp
-#    - descr: 个人日记
-#      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover4.webp
-#    - descr: 诗词歌赋
-#      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover5.webp
-#    - descr: 杂谈教程
-#      cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
-  custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
-
+# 文章隐藏：https://github.com/prinsss/hexo-hide-posts
+hide_posts:
+  enable: true # 是否启用 hexo-hide-posts
+  filter: hidden # 隐藏文章的 front-matter 标识，也可以改成其他你喜欢的名字
+  noindex: true # 为隐藏的文章添加 noindex meta 标签，阻止搜索引擎收录
+  # 设置白名单，白名单中的 generator 可以访问隐藏文章
+  # 常见的 generators 有：index, tag, category, archive, sitemap, feed, etc.
+  # allowlist_generators: []
+  allowlist_generators: ['tag', 'category']
+  
+  # 设置黑名单，黑名单中的 generator 不可以访问隐藏文章
+  # 如果同时设置了黑名单和白名单，白名单的优先级更高
+  # blocklist_generators: ['*']
+  blocklist_generators: ['index']
 

@@ -26,12 +26,12 @@ nav:
 
 # Menu 目錄
 menu:
-  搜索: /search/ || fas fa-search
+  # 搜索: /search/ || fas fa-search
   首页: / || fas fa-home
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  友链: /link/ || fas fa-link
+  书签: /link/ || fas fa-link
   # 关于: /about/ || fas fa-heart
 #格式如下：
 # [标题]: [路径] || [图标]
@@ -59,7 +59,7 @@ code_blocks:
   language: true
   # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
   # true: 收缩代码块 | false: 展开代码块 | none: 展开代码块并隐藏按钮
-  shrink: false
+  shrink: true
   fullpage: false
 
 # Social media links
@@ -70,7 +70,12 @@ code_blocks:
 #   icon: link || the description || color
 #   图标: 链接 || 描述 || 颜色
 social:
+  fab fa-tiktok: https://www.douyin.com/ || douyin || '#24292e'
+  fab fa-bilibili: https://www.bilibili.com/ || bilibili || '#24292e'
   fab fa-github: https://github.com/gaoguodong03 || Github || '#24292e'
+  # fab fa-envelope: https://my.bupt.edu.cn/ || 北京邮电大学 || '#24292e'
+  fab fa-comments: https://bbs.byr.cn/ || BYR || '#24292e'
+
   # fas fa-envelope: 邮箱链接 || 邮箱 || '#4a7dbe'
   # fas fa-envelope: mailto:2987371922@qq.com || Email || '#4a7dbe'
 
@@ -91,7 +96,7 @@ disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
 # 如果页面没有设置横幅图片，将显示默认的横幅图片
-default_top_img:
+default_top_img: transparent
 
 # The banner image of index page
 # 首页的横幅图片
@@ -105,17 +110,19 @@ archive_img: transparent
 # 注意：tag页面，不是tags页面
 tag_img: transparent
 
+link_img: transparent
+
 # The banner image of tag page, you can set the banner image for each tag
 # tag页面的横幅图片，可以为每个tag设置不同的横幅图片
 # Format:
 # 格式：
 #  - tag name: xxxxx
 #  - tag名称: 图片路径
-tag_per_img:
+tag_per_img: transparent
 
 # Note: category page, not categories page
 # 注意：category页面，不是categories页面
-category_img:
+category_img: transparent
 
 # The banner image of category page, you can set the banner image for each category
 # category页面的横幅图片，可以为每个category设置不同的横幅图片
@@ -123,7 +130,7 @@ category_img:
 # 格式：
 #  - category name: xxxxx
 #  - category名称: 图片路径
-category_per_img:
+category_per_img: transparent
 
 # The background image of footer
 # 页脚背景图片
@@ -225,7 +232,10 @@ subtitle:
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   # 如果关闭打字机效果，副标题将只显示sub的第一行
   sub:
-   - 碎碎念念 岁岁年年
+    - 面要常吃 面要常见
+    - 碎碎念念 岁岁年年
+    - 喜欢怎么会腻呢
+
 
 
 # Article layout on the homepage
@@ -333,16 +343,121 @@ noticeOutdate:
 # --------------------------------------
 # Footer Settings
 # --------------------------------------
+# --------------------------------------
+# 页脚设置
+# --------------------------------------
 footer:
-  nav:
   owner:
-    enable: false
-    since: 2025
-  # Copyright of theme and framework
-  copyright:
-    enable: false
-    version: false
-  custom_text:
+    enable: false  # 是否显示网站所有者信息
+    since: 2025   # 网站创建年份
+  custom_text: |  # 自定义页脚文本（支持HTML）
+    <style>
+      .footer {
+        text-align: center;
+        position: relative;
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+      .social-links i {
+        color: #000000;
+      }
+      .social-link {
+        color: #000000;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.1);
+      }
+      .social-link:hover {
+        color: #333333;
+        background: rgba(0, 0, 0, 0.2);
+        transform: translateY(-3px) scale(1.2);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        text-decoration: none !important; 
+      }
+      .footer p {
+        margin: 0.5rem 0;
+        line-height: 1;
+      }
+      .copyright {
+        font-size: 1.1rem; 
+        color: #000000;
+        font-weight: 400;
+      }
+      .tagline {
+        font-size: 0.8rem;
+        color: #333333;
+        font-style: italic;
+        font-weight: 500;
+      }
+      .visitor-count {
+        font-size: 0.75rem;
+        color: rgba(0, 0, 0, 0.7);
+        font-weight: 300;
+      }
+      #visitorCount {
+        font-weight: bold;
+      }
+    </style>
+    <div class="footer">
+      <p class="copyright">© 2025 果冻小配方 - 所有权利保留</p>
+      <p class="tagline">> 碎碎念念 岁岁年年 <</p>
+      <p class="visitor-count">访问量: <span id="visitorCount">1024</span> | 你是第 <span id="dailyVisitor">1</span> 位今日访客</p>
+    </div>
+    <script>
+      // 确保DOM加载完成后执行
+      document.addEventListener('DOMContentLoaded', function() {
+        // 模拟访问量增长
+        function updateVisitorCount() {
+          const countElement = document.getElementById('visitorCount');
+          let count = parseInt(countElement.textContent) || 1024;
+          // 从localStorage获取或初始化计数
+          const storedCount = localStorage.getItem('totalVisitors');
+          if (storedCount) {
+            count = parseInt(storedCount);
+            countElement.textContent = count;
+          }
+          // 每日访客计数
+          const today = new Date().toDateString();
+          const dailyData = JSON.parse(localStorage.getItem('dailyVisitors') || '{"date":"", "count":0}');
+          if (dailyData.date !== today) {
+            dailyData.date = today;
+            dailyData.count = 0;
+          }
+          dailyData.count += 1;
+          document.getElementById('dailyVisitor').textContent = dailyData.count;
+          localStorage.setItem('dailyVisitors', JSON.stringify(dailyData));
+          // 每30秒随机增加访问量
+          setInterval(() => {
+            count += Math.floor(Math.random() * 3);
+            countElement.textContent = count;
+            localStorage.setItem('totalVisitors', count.toString());
+          }, 30000);
+        }
+        updateVisitorCount();
+        // 添加点击动画效果
+        const socialLinks = document.querySelectorAll('.social-link');
+        socialLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            this.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+              this.style.transform = '';
+            }, 300);
+          });
+        });
+      });
+    </script>
+  copyright: false  # 是否显示主题和框架版权信息
+
 
 # --------------------------------------
 # Aside Settings
@@ -364,19 +479,19 @@ aside:
     enable: true
     description: "碎碎念念 岁岁年年"
     button: 
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/gaoguodong03
   card_announcement:
     enable: true
-    content: 有重要的事情 得去趟南京!
+    content: 有重要的事情 得去趟南京<br>努力写代码中<br>常驻实验室选手
   card_recent_post:
     enable: true
     # If set 0 will show all
-    limit: 5
+    limit: 3
     # Sort: date / updated
-    sort: date
+    sort: update
     sort_order:
   card_newest_comments:
     enable: false
@@ -386,16 +501,16 @@ aside:
     storage: 10
     avatar: true
   card_categories:
-    enable: true
+    enable: false
     # If set 0 will show all
-    limit: 8
+    limit: 3
     # Choose: none / true / false
     expand: none
     sort_order:
   card_tags:
     enable: true
     # If set 0 will show all
-    limit: 40
+    limit: 20
     color: false
     # Order of tags, random/name/length
     orderby: random
@@ -403,7 +518,7 @@ aside:
     order: 1
     sort_order:
   card_archives:
-    enable: true
+    enable: false
     # Type: monthly / yearly
     type: monthly
     # Eg: YYYY年MM月
@@ -414,7 +529,7 @@ aside:
     limit: 8
     sort_order:
   card_post_series:
-    enable: true
+    enable: false
     # The title shows the series name
     series_title: false
     # Order by title or date
@@ -466,11 +581,11 @@ darkmode:
   # autoChangeMode: false
   autoChangeMode: false
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
-  start: 7:00
-  end: 19:00
+  start: 
+  end: 
 
 # Show scroll percent in scroll-to-top button
-rightside_scroll_percent: false
+rightside_scroll_percent: true
 
 # Don't modify the following settings unless you know how they work
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -491,6 +606,7 @@ rightside_config_animation: true
 
 anchor:
   # When you scroll, the URL will update according to header id.
+  #滚动页面时，URL不会根据标题ID自动更新
   auto_update: false
   # Click the headline to scroll and update the anchor
   click_to_scroll: false
@@ -500,14 +616,16 @@ photofigcaption: false
 copy:
   enable: true
   # Add the copyright information after copied content
+  #禁用版权信息添加功能，复制内容后不会自动添加版权信息
   copyright:
     enable: false
     limit_count: 150
 
 # Need to install the hexo-wordcount plugin
 wordcount:
-  enable: false
+  enable: true
   # Display the word count of the article in post meta
+  # 如果启用，会在文章元信息中显示字数
   post_wordcount: true
   # Display the time to read the article in post meta
   min2read: true
@@ -515,10 +633,14 @@ wordcount:
   total_wordcount: true
 
 # Busuanzi count for PV / UV in site
+# - site_uv: true - 启用网站独立访客数统计（UV）
+# - site_pv: true - 启用网站总访问量统计（PV）
+# - page_pv: true - 启用单页面访问量统计
+
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # --------------------------------------
 # Math
@@ -1213,3 +1335,46 @@ CDN:
     # valine:
     # waline_css:
     # waline_js:
+
+# hexo-butterfly-swiper
+# see https://akilar.top/posts/8e1264d1/
+swiper:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  timemode: date #date/updated
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
+
+# hexo-butterfly-categories-card
+# see https://akilar.top/posts/a9131002/
+categoryBar:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: /categories/ # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  column: odd # odd：3列 | even：4列
+  row: 5 #显示行数，默认两行，超过行数切换为滚动显示
+  message:
+    - descr: 果冻的航海日记
+      cover: /img/logo.jpg
+    - descr: Hexo
+      cover: /img/logo.jpg
+    - descr: 果冻的奇妙小工具
+      cover: /img/logo.jpg
+    - descr: 果冻的日记本
+      cover: /img/logo.jpg
+    # - descr: 2
+    #   cover: /img/12.png
+  custom_css: ./css/categorybar.css

@@ -1,10 +1,13 @@
 ---
 title: 元芳接入MCP
-date: 2025-09-30
+date: 2025-10-02
 tags:
   - LLM
   - 元芳
+  - MCP
+  - tools
 categories: 果冻的航海日志
+cover: ./img/logoZiyouzhiyi.jpg
 ---
 # 项目特点(写在前面)
 基于 Flask + MySQL + ChromaDB 的 工具管理系统 ,部署在虎符上,为元芳mcp-client工具提供服务，主要用于管理和搜索各种元芳工具，并集成MCP,向量检索,内含元芳执行器不依赖其他元芳版本只依赖数据库。
@@ -138,6 +141,16 @@ final_response
 2025年5月,我开始尝试将MCP接入元芳,一开始使用OpenAI的模型,最后改为使用Qwen的模型
 2025年7月,最后将元芳的工具描述补充完毕.
 2025年9月,放完暑假,修改部分bug后, 最终将MCP上传Github[yuanfang-mcp](https://github.com/gaoguodong03/yuanfang-mcp)
+
+
+
+<div style="position: relative; padding: 30% 45%;">
+
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?isOutside=true&aid=114311175345762&bvid=BV1Y1duYbEHo&cid=29329656571&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+</iframe>
+
+</div>
+
 
 ## 项目进度
 

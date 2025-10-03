@@ -1,10 +1,12 @@
 ---
-title: 元芳接入Gemini大模型
-date: 2025-10-01
+title: 元芳接入Gemini
+date: 2025-10-02
 tags:
   - LLM
   - 元芳
+  - tools
 categories: 果冻的航海日志
+cover: ./img/logoZiyouzhiyi.jpg
 ---
 # 写在前面 我的实现方式
 gemini是google的 所以需要注册google对应的账号,由于需要翻墙再加上需要资金往来,所以放弃这条路了.

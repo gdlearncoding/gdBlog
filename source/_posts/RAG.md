@@ -4,6 +4,7 @@ date: 2025-10-01
 tags:
   - LLM
   - tools
+  - RAG
 categories: 果冻的航海日志
 ---
 ## 写在前面
