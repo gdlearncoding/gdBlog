@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: pink;
+			}
+			.box{
+				width: 120px;
+				height:  120px;
+				background: #ff0000;
+				/* 使盒子旋转45度, 并设置边距 */
+				transform: rotate(45deg);
+				margin: 200px auto;
+				animation: love 1s infinite;  /* 动画绑定 */
+				box-shadow: 0 0 20px #ff5500;
+			}
+			/* 爱心形状绘制 */
+			.box::before,
+			.box::after{
+				content: "";
+				/* 给插入的盒子进行定位 */
+				position: absolute;
+				width: 120px;
+				height: 120px;
+				background: #ff0000;
+				border-radius: 50%;
+			}
+			.box::before{
+				left: -68px;
+			}
+			.box::after{
+				top: -68px;
+			}
+			/* 动画绘制 */
+			@keyframes love{
+				0%{
+					transform: rotate(45deg)scale(0.85);
+				}
+				50%{
+					transform: rotate(45deg)scale(1);
+				}
+				100%{
+					transform: rotate(45deg)scale(0.85);
+				}
+			}
+			p{
+				text-align: center;
+				font-size: 30px;
+				font-weight: 520;
+				color: #ff0095;
+			}
+			.message {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<div class="heart"></div>
+		<p id="h2"></p>
+		<div class="message" id="message"></div>
+		<script>
+			var h = document.getElementById('h2'); // 调取html中的输出对象
+			var message = document.getElementById('message'); // 调取html中的输出对象
+			timeDifference('2024/12/25 21:00:00', '', h); // 此处先调用一次防止出现刷页面后没有内容
+			function a() {
+				timeDifference('2024/12/25 21:00:00', '', h);
+			} // 设置好时间差函数的调用参数,封装函数便于定时器调用
+			setInterval(a, 1000); // 定时器设置每1000毫秒即1s执行一次a函数
+	
+			function timeDifference(endT, endName = '2024/12/25', obj) {
+				var startTime = new Date().getTime(); // 引入当前时间戳
+				var endTime = new Date(endT).getTime(); // 引入结束目标时间戳
+				var secondDif = parseInt((endTime - startTime) / 1000); // 计算真实时间差,单位s/秒
+				if (secondDif < 0) {
+					var secondDifference = -secondDif;
+				} else {
+					var secondDifference = secondDif;
+				} // 定义时间差为正
+				var day = parseInt(secondDifference / 24 / 60 / 60); // 计算出天数取整
+				var hour = parseInt(secondDifference / 60 / 60) % 24; // 计算出总小时数去掉达到一天24h的部分
+				var minute = parseInt(secondDifference / 60) % 60; // 计算出总分钟数去掉达到一小时60分钟的部分
+				var second = secondDifference % 60; // 总秒数去掉达到一分钟60秒的部分
+				if (secondDif < 0) {
+					obj.innerHTML = `<span>${day < 10 ? '0' + day : day} : ${hour < 10 ? '0' + hour : hour} : ${minute < 10 ? '0' + minute : minute} : ${second < 10 ? '0' + second : second} </span>`;
+				} else {
+					obj.innerHTML = `${endName}<br><span>${day < 10 ? '0' + day : day} : ${hour < 10 ? '0' + hour : hour} : ${minute < 10 ? '0' + minute : minute} : ${second < 10 ? '0' + second : second} </span>`;
+				} // 根据真实时间差选择输出语句.
+				message.innerHTML = `GD OAO YM${endName}<br>谢谢你的出现，我早已离不开你，你很重要，也很特别。<br>遇见你之后，我惊觉人生有太多不舍和期待，想和你一起听绵延不绝的海浪，看一看天边无尽的黄昏，我爱你的感觉会持续很久很久，因为你不是我生命中的烟火，而是永不落幕的北斗星。<br>爱从来不是选择，而是从来没想过要放弃，是让人感到温柔和勇敢，是明知不可为而为之的坚定所以，我想让你知道我对你的爱不是一时兴起，而是内心深处无数次的心动，是情感，是你值得。<br>我喜欢和你在一起的每分每秒，好啦好啦 碎碎念念到这里吧，未来的岁岁年年，让我们一起度过~`;
+			}
+		</script>
+	</body>
+</html>
+//test
