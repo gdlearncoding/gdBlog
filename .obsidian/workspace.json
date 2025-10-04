@@ -55,30 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note/git.md",
+                "file": "note/XML.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "git"
-            }
-          },
-          {
-            "id": "f93142833ad0b567",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/2025-10-02.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-10-02"
+              "title": "XML"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -197,13 +183,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/2025-10-02.md",
+                "file": "note/XML.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-10-02 的大纲"
+              "title": "XML 的大纲"
             }
           }
         ],
@@ -225,10 +211,18 @@
       "publish:发布更改": false
     }
   },
-  "active": "f93142833ad0b567",
+  "active": "ad874a2c2722078a",
   "lastOpenFiles": [
-    "未命名.canvas",
+    "note/SQL.md",
+    "note/Nginx.md",
+    "note/提速工具.md",
+    "note/使用Apifox.md",
+    "note/虎符.md",
+    "source/_posts/2025-10-04.md",
+    "note/Template/日记模版.md",
+    "note/git.md",
     "source/_posts/2025-10-02.md",
+    "未命名.canvas",
     "source/_posts/聊聊Deep Search 和Deep Research.md",
     "source/_posts/ObsidianPicture/Pasted image 20251002222651.png",
     "source/_posts/ObsidianPicture/Pasted image 20251002222545.png",
@@ -242,15 +236,10 @@
     "source/_posts/ObsidianPicture/Pasted image 20251002220630.png",
     "note/元芳.md",
     "source/_posts/RAG.md",
-    "note/git.md",
     "source/_posts/搜索效率翻倍小技巧.md",
-    "note/提速工具.md",
-    "note/使用Apifox.md",
     "未命名",
     "source/_posts/DeepSearch.md",
-    "note/SQL.md",
     "note/XML.md",
-    "note/Nginx.md",
     "source/_posts/MCP.md",
     "source/_posts/Hexo通过插件隐藏指定文章.md",
     "source/_posts/JSON.md",
@@ -270,8 +259,6 @@
     "public/2025/10/02/Hexo通过插件隐藏指定文章/index.html",
     "public/2025/10/01/DeepSearch/index.html",
     "public/pluginsSrc/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2",
-    "auto_git_push_config.md",
-    "source/search/index.md",
-    "node_modules/hexo-wordcount/README.md"
+    "auto_git_push_config.md"
   ]
 }
