@@ -4,8 +4,9 @@ date: 2025-10-01
 tags:
   - LLM
   - DeepSearch
-categories: 果冻的航海日志
-cover:
+  - 调研
+categories: 果冻的理论学习
+cover: ./img/logoZiyouzhiyi.jpg
 ---
 ## 论文调研
 

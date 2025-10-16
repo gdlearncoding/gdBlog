@@ -2,7 +2,9 @@
 title: MVC（Model-View-Controller，模型 - 视图 - 控制器）
 date: 2025-09-30
 tags:
-categories: 果冻的航海日志
+  - tools
+categories: 果冻的理论学习
+cover: ./img/logoZiyouzhiyi.jpg
 ---
 ## 简介
 MVC（Model-View-Controller，模型 - 视图 - 控制器）是一种软件架构设计模式，其核心思想是**分离关注点**，通过将应用程序划分为三个相互关联但功能独立的组件.

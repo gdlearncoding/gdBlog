@@ -1,43 +1,43 @@
 # 按着以下格式进行添加
 - class_name: 链接快速访问
   link_list:
+    - name: LeetCode
+      link: https://leetcode.cn/studyplan/top-100-liked/
+      avatar: ../img/logoLeetCode.jpg
+      descr: LeetCode 100 题
     - name: 北邮人论坛
       link: https://bbs.byr.cn/
       avatar: ../img/logoBupt.jpg
-      description: 北邮人论坛
+      descr: 北邮人论坛
     - name: 北邮人PT
       link: https://byr.pt/index.php
       avatar: ../img/logoBupt.jpg  
-      description: 北邮人PT
+      descr: 北邮人PT
     - name: 北邮信息门户
       link: https://my.bupt.edu.cn/
       avatar: ../img/logoBupt.jpg
-      description: 北邮信息门户
-    - name: B站
-      link: https://www.bilibili.com/
-      avatar: ../img/logo.jpg
-      description: false
-    - name: Github
-      link: https://github.com/
-      avatar: ../img/logo.jpg
-      description: false
+      descr: 北邮信息门户
     - name: 自邮之翼主页
       link: http://www.free4inno.com/
       avatar: ../img/logoZiyouzhiyi.jpg
-      description: false
+      descr: 自邮之翼
     - name: 虎符
       link: https://hf.free4inno.com/#/login?redirect=%2Fdashboard
       avatar: ../img/logoZiyouzhiyi.jpg
-      description: false
+      descr: 虎符
     - name: 元芳studio
       link: https://yf.free4inno.com/#/login?redirect=%2Fapp_management%2Findex
       avatar: ../img/logoZiyouzhiyi.jpg
-      description: false
+      descr: 元芳studio
     - name: 元芳chat
       link: https://chat.free4inno.com/#/login?redirect=%2Fdashboard
       avatar: ../img/logoZiyouzhiyi.jpg
-      description: false
+      descr: 元芳chat
     - name: 知了
       link: https://zhi.free4inno.com/
       avatar: ../img/logoZiyouzhiyi.jpg  
-      description: false
+      descr: 知了
+    - name: 自邮之翼飞书
+      link: https://free4inno.feishu.cn/wiki/CxV0wuVATi8Z0hk6wF8cWgzCnTb
+      avatar: ../img/logoZiyouzhiyi.jpg  
+      descr: 自邮之翼飞书

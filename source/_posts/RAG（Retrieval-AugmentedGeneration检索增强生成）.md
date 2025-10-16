@@ -1,11 +1,12 @@
 ---
-title: RAG（Retrieval-AugmentedGeneration检索增强生成
+title: RAG（Retrieval-AugmentedGeneration检索增强生成）
 date: 2025-10-01
 tags:
   - LLM
   - tools
   - RAG
-categories: 果冻的航海日志
+categories: 果冻的理论学习
+cover: ./img/logoZiyouzhiyi.jpg
 ---
 ## 写在前面
 

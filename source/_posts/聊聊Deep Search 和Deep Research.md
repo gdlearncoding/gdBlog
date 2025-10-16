@@ -6,7 +6,7 @@ tags:
   - LLM
   - RAG
   - tools
-categories: 果冻的航海日志
+categories: 果冻的理论学习
 cover: ./img/logoDeepsearch.jpg
 ---
 [2022 年 11 月 30 日](https://openai.com/index/chatgpt/)，OpenAI 正式发布 ChatGPT 产品，仅两个月后，其月活用户就突破了 1 个亿，成为历史上增长最快的消费类应用之一。一时之间，生成式 AI 技术遍地开花，国内外科技大厂紧锣密鼓纷纷入场，各种大模型和 AI 产品以星火燎原之势涌现出来。

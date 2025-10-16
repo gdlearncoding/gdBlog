@@ -74,7 +74,7 @@ social:
   fab fa-bilibili: https://www.bilibili.com/ || bilibili || '#24292e'
   fab fa-github: https://github.com/gaoguodong03 || Github || '#24292e'
   # fab fa-envelope: https://my.bupt.edu.cn/ || 北京邮电大学 || '#24292e'
-  fab fa-comments: https://bbs.byr.cn/ || BYR || '#24292e'
+  fab fa-comments: https://leetcode.cn/studyplan/top-100-liked/ || LeetCode || '#24292e'
 
   # fas fa-envelope: 邮箱链接 || 邮箱 || '#4a7dbe'
   # fas fa-envelope: mailto:2987371922@qq.com || Email || '#4a7dbe'
@@ -485,7 +485,7 @@ aside:
       link: https://github.com/gaoguodong03
   card_announcement:
     enable: true
-    content: 有重要的事情 得去趟南京<br>努力写代码中<br>常驻实验室选手
+    content: 有重要的事情 得去趟南京<br>苦苦刷LeetCode<br>常驻实验室选手<br>健身房小小白
   card_recent_post:
     enable: true
     # If set 0 will show all

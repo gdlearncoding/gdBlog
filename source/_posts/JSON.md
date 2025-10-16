@@ -3,7 +3,8 @@ title: JSON
 date: 2025-09-29
 tags:
   - tools
-categories: 果冻的航海日志
+categories: 果冻的奇妙小工具
+cover: ./img/bearbug1.jpg
 ---
 JSON是一种文本数据格式!
 

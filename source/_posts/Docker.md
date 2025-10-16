@@ -1,9 +1,11 @@
 ---
 title: Docker
-date: 2025-09-29
+date: 2025-10-08
 tags:
   - tools
+  - Docker
 categories: 果冻的航海日志
+cover: ./img/bearbug1.jpg
 ---
 远程镜像仓库
 本地镜像(镜像是只读的)
@@ -27,3 +29,17 @@ docker exec -it ID /bin/bash  进入容器内部
 dickerfile脚本 是可以通过下载文件的一些来创建脚本
 
 网络中的映射一般是端口映射,容器端口8001映射到宿主机的8080
+
+
+## Docker安装
+
+不要用homebrew 以前其他软件使用下载都很顺利，但这一次安装Docker却不太行，使用了代理，但总是出现报错
+
+Error response from daemon: Get "https://registry-1.docker.io/v2/": EOF
+
+虽然改了很多代理，但是一直不信。知道去官网下载后就没问题了。
+
+出问题的可能是：
+1）Mac的新款M4芯片
+2）homebrew安装位置不对，或者版本过低
+

@@ -5,7 +5,11 @@
     "scaffolds/",
     "themes/",
     "/public/",
-    "source/old_posts/"
+    "source/old_posts/",
+    "source/_data/",
+    "source/link/",
+    "source/link/",
+    "source/tags/"
   ],
   "newFileLocation": "folder",
   "newFileFolderPath": "note",

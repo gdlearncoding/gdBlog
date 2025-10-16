@@ -54,7 +54,7 @@ Flask应用
 ```
 ### 主要类描述
 #### 1. CustomEmbeddingFunction 类(出问题找王闯师兄,我只调用API)
-- 功能 : 处理向量嵌入请求[[RAG]]
+- 功能 : 处理向量嵌入请求[[RAG（Retrieval-AugmentedGeneration检索增强生成）]]
 - 作用 : 向嵌入服务发送请求，将文本转换为向量表示
 - 关键方法 : __call__() - 处理嵌入请求并返回向量
 #### 2. Tool 类（数据库模型）
@@ -136,7 +136,7 @@ final_response
 
 # 项目来历
 
-2024年11月,MCP的诞生[[MCP]]
+2024年11月,MCP的诞生[[MCP(Model Context Protocol模型上下文协议)]]
 2025年4月,丁安然师姐[介绍MCP专题](https://www.bilibili.com/video/BV1Y1duYbEHo/?spm_id_from=333.1387.top_right_bar_window_custom_collection.content.click&vd_source=9465b0c882cf84738c83178da9a76207)
 2025年5月,我开始尝试将MCP接入元芳,一开始使用OpenAI的模型,最后改为使用Qwen的模型
 2025年7月,最后将元芳的工具描述补充完毕.

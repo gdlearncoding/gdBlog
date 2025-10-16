@@ -17,7 +17,7 @@ cover: ./img/logoZiyouzhiyi.jpg
 1. 首先使用了DashScope翻译服务完成中译英, 因为arXiv的中文搜索不太行
 2. 使用官方提供的arXiv库实现arXiv论文检索
 3. 最后使用DeepSeek推理模型, 将论文检索的内容作为输入再加上用户原本的输入作为最终的输入给DeepSeekR1模型(在元芳上)
-4. 返回1.论文 2.深度思考 3.最后回答 作为输出.相当于实现了[[DeepSearch]]
+4. 返回1.论文 2.深度思考 3.最后回答 作为输出.相当于实现了[[DeepSearch的论文调研]]
 
 备份在github上了Deepsearch
 ## 流程核心功能
